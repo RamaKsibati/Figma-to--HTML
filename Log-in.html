@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo in Every Frame</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('C:\Users\sroro\OneDrive\Desktop\figma to html\IMG_4121-scaled') no-repeat center center fixed;
+            background-size: cover;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+
+        .container {
+            width: 360px;
+            margin: 0 auto;
+        }
+
+        .frame {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 254px;
+            height: 70px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .button {
+            background-color: #8FDDFE;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            border-radius: 40px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .yellow-button {
+            background-color: #F9D412;
+        }
+
+        /* Additional styling for individual frames */
+        .frame-1 .header {
+            font-size: 32px;
+            color: #093384;
+            text-align: center;
+        }
+
+        .frame-1 .input-box {
+            width: 319px;
+            height: 64px;
+            border-radius: 8px;
+            border: 1px solid #8FDDFE;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .or {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 20px;
+            color: #0F8CC1;
+        }
+
+        .privacy-policy {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #0F8CC1;
+        }
+
+
+        .frame-2 .header {
+            font-size: 32px;
+            color: #093384;
+            text-align: center;
+        }
+
+        .frame-2 .input-box {
+            width: 288px;
+            height: 61px;
+            border-radius: 8px;
+            border: 1px solid #8FDDFE;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .privacy-policy {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: #0F8CC1;
+        }
+        .frame-2 .input-box img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .frame-2 .password-label {
+            font-size: 15px;
+            color: #0F8CC1;
+            margin-bottom: 5px;
+        }
+
+        .frame-2 .forgot-password {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #0F8CC1;
+        }
+
+        .frame-2 .reset-password {
+            color: #C10F0F;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .frame-3 .header {
+            font-size: 32px;
+            color: #093384;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .frame-3 .verification-code {
+            font-size: 14px;
+            color: #0F8CC1;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }.enter-code-text {
+            font-size: 15px;
+            color: #BEBEBC;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .code-inputs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .code-input {
+            width: 44px;
+            height: 42px;
+            border: 1px solid #DDDDDD;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 24px;
+            outline: none;
+        }
+
+        .digit-code-img {
+            width: 200px;
+            height: 49px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .privacy-policy {
+            text-align: center;
+            font-size: 13px;
+            color: #0F8CC1;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Frame 1 -->
+        <div class="frame frame-1">
+            <img class="logo" src="C:\Users\sroro\OneDrive\Desktop\figma to html\ATSSLogo" alt="Logo">
+            <div class="header">Log In</div>
+            <input type="text" class="input-box" placeholder="Email Address">
+
+            <!-- Continue button -->
+            <div class="button yellow-button">Continue</div>
+
+            <!-- "or" text -->
+            <div class="or">or</div>
+
+            <!-- Social buttons with logos -->
+            <div class="button social-btn">
+                <img src="https://via.placeholder.com/24" alt="Google Logo">Continue with Google
+            </div>
+            <div class="button social-btn">
+                <img src="https://via.placeholder.com/24" alt="Facebook Logo">Continue with Facebook
+            </div>
+            <div class="button social-btn">
+                <img src="https://via.placeholder.com/24" alt="Apple Logo">Continue with Apple
+            </div>
+
+            <!-- Privacy Policy at the bottom -->
+            <div class="privacy-policy">Privacy Policy</div>
+        </div>
+
+        <!-- Frame 2 -->
+        <div class="frame frame-2">
+            <img class="logo" src="C:\Users\sroro\OneDrive\Desktop\figma to html\ATSSLogo" alt="Logo">
+            <div class="header">Log In</div>
+            <div class="password-label">Password</div>
+            <input type="password" class="input-box" placeholder="Password">
+            <img src="https://via.placeholder.com/24" alt="Eye Icon">
+            <div class="button yellow-button">Sign In</div>
+            <div class="forgot-password">
+                Forget your password? <span class="reset-password">Reset password</span>
+            </div>
+            <div class="privacy-policy">Privacy Policy</div>
+        </div>
+
+        <!-- Frame 3 -->
+        <div class="frame frame-3">
+            <img class="logo" src="C:\Users\sroro\OneDrive\Desktop\figma to html\ATSSLogo" alt="Logo">
+            <div class="header">Log In</div>
+            <div class="verification-code">Enter the 4-digit numbers:</div>
+            <img class="digit-code-img" src="C:\Users\sroro\OneDrive\Desktop\figma to html\4-digit code" alt="4 Digits Example">
+            <div class="enter-code-text">Enter the 4-digit numbers:</div>
+
+            <!-- Rectangles for input fields -->
+            <div class="code-inputs">
+                <input class="code-input" type="text" maxlength="1">
+                <input class="code-input" type="text" maxlength="1">
+                <input class="code-input" type="text" maxlength="1">
+                <input class="code-input" type="text" maxlength="1">
+            </div>
+
+            <!-- Privacy Policy at the bottom -->
+            <div class="privacy-policy">Privacy Policy</div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
